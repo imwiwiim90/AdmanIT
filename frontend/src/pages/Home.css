@@ -1,0 +1,42 @@
+.user-list {
+	padding: 0;
+}
+
+.user-list li {
+	list-style: none;
+	padding: 20px 40px;
+	cursor: pointer;
+	border-bottom: 1px solid #AAAA;
+	color: #111;
+	text-decoration: none!important;
+}
+.user-list a:hover {
+	text-decoration: none;
+}
+
+.user-list li:hover {
+	background-color: #FAFAFA;
+}
+
+.avatar {
+	overflow: hidden;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+}
+
+.avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+.pager {
+	margin-top: 60px;
+}
+.pager > div {
+	padding: 30px 0;
+}
+.pager > div:first-child:hover, .pager > div:last-child:hover{
+	cursor: pointer;
+	background-color: #F0F0F0;
+}
