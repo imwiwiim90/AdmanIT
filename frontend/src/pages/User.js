@@ -8,11 +8,8 @@ class User extends Component {
   constructor() {
   	super();
   	this.state = {
-    		'user' : {
-          "first_name": "",
-          "last_name": "",
-        }
-,  	}
+    
+    }
   	this.api = new Api();
 
   }
@@ -25,6 +22,7 @@ class User extends Component {
 
 
   render() {
+    if (this.state.user === undefined) return (<div></div>);
     return (
       <div className="container">
         <img className='profile-picture' src={this.state.user.avatar} alt='profile'/>
