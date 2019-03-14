@@ -8,7 +8,10 @@ class User extends Component {
   constructor() {
   	super();
   	this.state = {
-    		'user' : {}
+    		'user' : {
+          "first_name": "",
+          "last_name": "",
+        }
 ,  	}
   	this.api = new Api();
 
